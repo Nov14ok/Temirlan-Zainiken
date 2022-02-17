@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script scr="practice2.js"></script>
+    <title>Dom practice 2</title>
+  </head>
+  <body>
+    <label>password :
+    <input name="password" id="password" type="password" onkeyup='check();' />
+</label>
+<br>
+<label>confirm password:
+    <input type="password" name="confirm_password" id="confirm_password"  onkeyup='check();' />
+    <span id='checker'></span>
+    <script type="text/javascript">
+    var check = function() {
+         if (document.getElementById('password').value ==
+             document.getElementById('confirm_password').value) {
+             document.getElementById('checker').style.color = 'green';
+             document.getElementById('checker').innerHTML = 'succesfully';
+         } else {
+             document.getElementById('checker').style.color = 'red';
+             document.getElementById('checker').innerHTML = 'wrong';
+         }
+     }
+
+
+    </script>
+</label>
+<hr>
+
+  </body>
+</html>
